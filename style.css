@@ -1,0 +1,149 @@
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+}
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+/* Your CSS goes here */
+#copy {
+  width: 275px;
+  margin: 0 auto;
+}
+.tooltip__container {
+  position: relative;
+  background: #424242;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 10px;
+}
+.tooltip__container:after {
+  top: 100%;
+  left: 75%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(119, 119, 119, 0);
+  border-top-color: #424242;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.statusbar__container {
+  height: 10px;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-bottom: 0;
+}
+.statusbar__progress {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "pp";
+  width: 80px;
+  height: 10px;
+  background-color: #ef5f3c;
+}
+.main__container {
+  position: relative;
+  width: auto;
+  border: 1px solid #eaeaea;
+  margin: 0 auto;
+  padding: 20px;
+
+  color: #777;
+  text-align: left;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+p {
+  margin-bottom: 14px;
+  padding-right: 20px;
+}
+.main__text--orange {
+  color: #ef5f3c;
+  font-weight: bold;
+}
+
+.inputgroup {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+.inputgroup__left,
+.inputgroup__right {
+  flex: 1;
+}
+.inputgroup__left {
+  margin-right: 15px;
+}
+.input__money {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #eaeaea;
+  height: 100%;
+  padding: 10px 20px;
+}
+.input__money:before {
+  content: "$";
+  left: 0;
+  position: relative;
+  left: -5px;
+}
+.button {
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0;
+}
+.button--basic {
+  background-color: white;
+  border: 1px solid #eaeaea;
+}
+.button--success {
+  color: white;
+  background-color: #1cbc2c;
+  border: none;
+}
+
+a {
+  font-style: italic;
+  color: #20a1d4;
+  font-weight: lighter;
+}
